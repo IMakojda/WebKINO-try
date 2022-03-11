@@ -2,7 +2,7 @@ const Trending = ()=>{
 
   return(
     <div>
-      <span className="pageTitle">Trnding</span>
+      <span className="pageTitle">Treding</span>
     </div>
   )
 }
