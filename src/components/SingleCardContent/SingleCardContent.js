@@ -13,13 +13,13 @@ const SingleCardContent = ({
 
   return (
     <li className="media">
-      <span className="badge" background-color={vote_average > 6 ? "blue" : "orange"}>{vote_average}</span>
-    <img className="poster" src={poster ?`${img_300}/${poster}` : unavailable} alt={title}/>
-      <b className="title">{title}</b>
-      <span className="type_date">
-        {media_type==="tv" ?  "TV Series" : "Movie"}
-          <span className="type_date">{date.slice(0,4)}</span>
-      </span>
+      <span className="badge" style={{ backgroundColor: vote_average > 6 ? "#05a500" : "#e93e47"}}>{vote_average}</span>
+        <img className="poster" src={poster ?`${img_300}/${poster}` : unavailable} alt={title}/>
+          <b className="title">{title}</b>
+            <span className="type_date">
+              {media_type==="tv" ?  "TV Series" : "Movie"}
+                <span className="type_date">{date.slice(0,4)}</span>
+            </span>
     </li>
   )
 }

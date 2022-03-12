@@ -8,20 +8,11 @@
 }
 
 .media:hover {
-  background-color: rgba(255, 255, 255, 0.486);
-  color: black;
-  /* font-size: 17px; */
+  background-color: rgba(39, 37, 37, 0.89);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  /* color: black; */
 }
-
-/* @media (max-width: 550px) {
-  .media {
-    width: 46%;
-  }
-}@media (max-width: 550px) {
-  .media {
-    width: 46%;
-  }
-} */
 
 .poster {
   display : block;
@@ -48,14 +39,15 @@
 
 .badge{
   position: absolute;
-  top: -5px;
+  top: -8px;
   right: -5px;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color:#e73a05;
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: aliceblue;
 }
