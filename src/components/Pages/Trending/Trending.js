@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-
-// axios.<method> will now provide autocomplete and parameter typings
+import SingleCardContent from 'components/SingleCardContent/SingleCardContent';
+import "./Trending.css"
 
 const Trending = ()=>{
   const [page, setPage] = useState(1);
@@ -9,13 +9,8 @@ const Trending = ()=>{
 
   const fetchTrending = async ()=> {
     const {data} = await axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`) 
-    console.log(data);
     setContent(data.results);
-
   }
-  
-
-  
 
   useEffect(()=>{
     window.scroll(0, 0);
@@ -26,16 +21,22 @@ const Trending = ()=>{
   return(
     <div>
       <span className="pageTitle">Treding</span>
-        <div className='trending'>
+        <ul className='trending'>
           {
-            content && content.map((c)=>console.log(c))
+            content && content.map((c)=>(
+            <SingleCardContent
+            key={c.id}
+            id={c.id}
+            poster={c.poster_path}
+            title={c.title|| c.name}
+            date={c.first_air_date|| c.release_date}
+            media_type={c.media_type}
+            vote_average={c.vote_average}
+            />))
           }
-        </div>
+        </ul>
     </div>
   )
 }
 
 export default Trending;
-
-const Api_Key="3284913a940180ec63ebc0044db949d5"
-// https://api.themoviedb.org/3/trending/all/week?api_key=<<api_key>>
