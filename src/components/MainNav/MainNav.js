@@ -13,19 +13,19 @@ import {useNavigate}  from 'react-router-dom'
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
-  const history = useNavigate();
+  const navigation = useNavigate();
   
   useEffect(() => {
     if (value === 0) {
-      history("/");
+      navigation("/");
     } else if (value === 1) {
-      history("/movies");
+      navigation("/movies");
     } else if (value === 2) {
-      history("/series");
+      navigation("/series");
     } else if (value === 3) {
-      history("/search");
+      navigation("/search");
     }
-  }, [value, history]);
+  }, [value, navigation]);
 
 
   // useEffect( () => {

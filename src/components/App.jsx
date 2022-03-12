@@ -19,7 +19,6 @@ export const App = () => {
       <div className="app">
         <Container>
           <Routes>
-            {/* <Route path="/movies"><Movies/></Route> */}
             <Route path="/" element={<Trending/>} exact/> 
             <Route path='/movies' element={<Movies/>}/>
             <Route path='/series' element={<Series/>}/>
