@@ -6,10 +6,10 @@ import PaginationList from 'components/Pagination/Pagination';
 
 
 const Trending = ()=>{
-
+  
   const [page, setPage] = useState(1);
   const [content, setContent]=useState([]);
-  const [totalPages,setTotalPages]=useState([])
+  const [totalPages,setTotalPages]=useState()
 
   const fetchTrending = async ()=> {
     const {data} = await axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`) 
@@ -20,7 +20,7 @@ const Trending = ()=>{
   useEffect(()=>{
     window.scroll(0, 0);
     fetchTrending()
-
+  // eslint-disable-next-line
   },[page])
 
   return(
