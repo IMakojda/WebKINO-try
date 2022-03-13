@@ -14,7 +14,7 @@ import Search from "./Pages/Search/Search";
 
 export const App = () => {
   return (
-    <BrowserRouter >
+    <BrowserRouter basename = "/WebKINO-try/">
      <Header/>
       <div className="app">
         <Container>
