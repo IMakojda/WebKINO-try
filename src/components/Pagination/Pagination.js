@@ -24,8 +24,8 @@ return <div style={{
   }}>
    <ThemeProvider theme={darkTheme}>
       <Pagination
-      // color="primary"
-      variant="outlined"
+      color="primary"
+      // variant="outlined"
       count={numberOfPage}
       onChange={(e)=>{handlePageChange(e.target.textContent)}}
       hideNextButton

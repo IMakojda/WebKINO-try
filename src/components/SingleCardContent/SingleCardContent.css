@@ -4,14 +4,14 @@
   border-radius: 10px;
   position: relative;
   font-family: "Montserrat", sans-serif;
-  
+  max-width: 300px;
+  margin-top: 5px;
 }
 
 .media:hover {
   background-color: rgba(39, 37, 37, 0.89);
   color: rgb(255, 255, 255);
   font-weight: bold;
-  /* color: black; */
 }
 
 .poster {
@@ -39,8 +39,8 @@
 
 .badge{
   position: absolute;
-  top: -8px;
-  right: -5px;
+  top: -15px;
+  right: -10px;
   width: 40px;
   height: 40px;
   border-radius: 50%;

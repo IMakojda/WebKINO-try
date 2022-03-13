@@ -40,7 +40,7 @@ const Trending = ()=>{
             />))
           }
         </ul>
-       <PaginationList setPage={setPage} numberOfPage={totalPages}/> 
+       <PaginationList setPage={setPage} numberOfPage={totalPages} /> 
     </div>
   )
 }
