@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/WebKINO-try/static/css/main.99b38b52.css",
-    "main.js": "/WebKINO-try/static/js/main.f1f42bc3.js",
+    "main.js": "/WebKINO-try/static/js/main.95e37754.js",
     "static/js/787.6b7abe35.chunk.js": "/WebKINO-try/static/js/787.6b7abe35.chunk.js",
     "index.html": "/WebKINO-try/index.html",
     "main.99b38b52.css.map": "/WebKINO-try/static/css/main.99b38b52.css.map",
-    "main.f1f42bc3.js.map": "/WebKINO-try/static/js/main.f1f42bc3.js.map",
+    "main.95e37754.js.map": "/WebKINO-try/static/js/main.95e37754.js.map",
     "787.6b7abe35.chunk.js.map": "/WebKINO-try/static/js/787.6b7abe35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99b38b52.css",
-    "static/js/main.f1f42bc3.js"
+    "static/js/main.95e37754.js"
   ]
 }
