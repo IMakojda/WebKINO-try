@@ -3,6 +3,7 @@ import { unavailable } from "config/config";
 import "./SingleCardContent.css"
 import ModalCard from "components/Modal/Modal";
 
+
 const SingleCardContent = ({
   id,
   poster,
@@ -14,7 +15,9 @@ const SingleCardContent = ({
 
   return (
     <ModalCard media_type={media_type} id={id}>
-      <li className="media">
+      <li className="media"
+        
+      >
         <span className="badge" style={{ backgroundColor: vote_average > 6 ? "#05a500" : "#e93e47"}}>{vote_average}</span>
           <img className="poster" src={poster ?`${img_300}/${poster}` : unavailable} alt={title}/>
             <b className="title">{title}</b>

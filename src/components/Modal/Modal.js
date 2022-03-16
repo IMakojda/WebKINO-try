@@ -10,6 +10,7 @@ import { img_500, unavailable, unavailableLandscape} from 'config/config';
 import "./Modal.css"
 import Box from '@mui/material/Box';
 import Gallery from 'components/Carousel/Carousel';
+import { motion } from 'framer-motion';
 
 const style = {
   position: 'absolute',
@@ -51,7 +52,12 @@ export default function ModalCard ({children, media_type, id}) {
     // eslint-disable-next-line
   }, []);
   return (
-    <div>
+    <motion.div 
+    layout
+        animate={{opacity:1, scale:1}}
+        initial={{opacity:0, scale:0}}
+        exit={{opacity:0, scale:0}}
+        transition={{duration:0.4}}>
       <div
         className="media"
         style={{ cursor: "pointer" }}
@@ -130,6 +136,6 @@ export default function ModalCard ({children, media_type, id}) {
           </Box>
         </Fade>
       </Modal>
-    </div>
+    </motion.div>
   );
 }
